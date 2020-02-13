@@ -1,0 +1,36 @@
+{
+  "name": "testautomation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean:reports": "rimraf cypress/results/json/* || true",
+    "pretest": "npm run clean:reports",
+    "report": "cypress run --reporter cypress-multi-reporters --reporter-options configFile=reporter-config.json",
+    "openCypress":"node_modules\\.bin\\cypress open",
+    "scripts": "node_modules\\.bin\\cypress run",
+    "headedTest": "npm run scripts -- --headed",
+    "chromeTest": "npm run scripts -- --browser chrome",
+    "combine-reports":"npx mochawesome-merge cypress/results/json/*.json > mochawesome.json",
+    "generate-report":"npx marge mochawesome.json",
+    
+    "test": "npm run pretest || npm run chromeTest"
+  },
+  "author": "sivakumar choudary",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^3.8.3",
+    "cypress-multi-reporters": "^1.2.3",
+    "cypress-plugin-retries": "^1.5.2",
+    "mocha": "^5.2.0",
+    "mocha-junit-reporter": "^1.23.3",
+    "mochawesome": "^4.1.0",
+    "mochawesome-merge": "^4.0.0",
+    "mochawesome-report-generator": "^4.1.0"
+  },
+  "dependencies": {
+    "rf": "0.0.1",
+    "rm": "^0.1.8",
+    "update": "^0.7.4"
+  }
+}

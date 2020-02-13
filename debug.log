@@ -1,0 +1,6 @@
+[0207/145626.928:ERROR:process_memory_win.cc(73)] ReadMemory at 0x5208290 of 28 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
+[0207/145626.928:WARNING:pe_image_reader.cc(171)] could not read data directory from C:\WINDOWS\SYSTEM32\ntd1l.dll
+[0211/110933.609:ERROR:process_memory_win.cc(73)] ReadMemory at 0x5c98290 of 28 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
+[0211/110933.610:WARNING:pe_image_reader.cc(171)] could not read data directory from C:\WINDOWS\SYSTEM32\ntd1l.dll
+[0211/124153.720:ERROR:process_memory_win.cc(73)] ReadMemory at 0x5608290 of 28 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
+[0211/124153.721:WARNING:pe_image_reader.cc(171)] could not read data directory from C:\WINDOWS\SYSTEM32\ntd1l.dll
